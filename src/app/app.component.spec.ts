@@ -20,7 +20,7 @@ describe('AppComponent', () => {
   it(`should have as title 'app'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('TIC-TAC-TOE!!!!!!!!!!');
+    expect(app.title).toEqual('TIC-TAC-TOE.');
   }));
 
   it('should render title in a h1 tag', async(() => {
@@ -28,6 +28,6 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent)
-      .toContain('Welcome to TIC-TAC-TOE!!!!!!!!!!!!');
+      .toContain('Welcome to TIC-TAC-TOE.');
   }));
 });
